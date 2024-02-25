@@ -8,7 +8,7 @@
 
 # Google Generative **AI**
 
-A template for a Rust application that's using [Slint](https://slint.rs) for the user interface.
+**I'm trying to build a google ai GUI**
 
 ## About
 
