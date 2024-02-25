@@ -1,0 +1,37 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export component AppWindow inherits Window {
+    in-out property<int> counter: 42;
+    callback request-increase-value();
+    width: 600px;
+    height: 800px;
+    background: #333;
+    title: "Google AI";
+    GridLayout {
+        padding: 14px;
+        Row {
+            Text {
+                text: "Google AI";
+                color: #FFF;
+                font-size: 32px;
+                horizontal-alignment: center;
+            }
+        }
+        Row {
+            Rectangle {
+                background: #FFF;
+                width: 100%;
+                height: 50px;
+                padding: 5px;
+                TextInput {
+                    text: "Input your query";
+                    vertical-alignment: center;
+                    font-size: 14px;
+                    color: #000;
+                    selection-background-color: #a80000;
+                }
+            }
+        }
+    }
+        
+}
